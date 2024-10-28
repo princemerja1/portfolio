@@ -29,7 +29,7 @@ export default function Hero() {
                   experiences.
                 </div>
                 <div className="wc-description">
-                  Hey, I'm Prince, welcome to my P2Verse. I love building
+                  Hey, I&apos;m Prince, welcome to my P2Verse. I love building
                   beautiful, timeless, imaginary and realistic digital art.
                   Whether it is VFX, CGI, Photo, Video, Movies and Games.
                 </div>
