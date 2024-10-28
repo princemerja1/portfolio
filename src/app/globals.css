@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,7 +13,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #181818;
     --foreground: #ededed;
   }
 }
@@ -24,4 +28,146 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+
+*
+{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+section {
+    opacity: 75%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #080808; /* Ensure it's a hex value, no quotes */
+    overflow: hidden; /* Hide overflow to keep animation clean */
+    z-index: -1; /* Send background section behind other content */
+  }
+
+.star{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 5px;
+    height: 5px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.781),0 0 0 0px rgba(255, 255, 255, 0.493),0 0 5px rgba(255,255,255,0.1);
+    animation: animate 100s linear infinite;
+}
+.star::before{
+    content:'';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(200deg) translateX(0);
+        opacity: 1;
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(200deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+.star:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+.star:nth-child(2){
+    top: 0;
+    left: 80px;
+    right: initial;
+    animation-delay: 0.2s;
+    animation-duration: 12s;
+}
+.star:nth-child(3){
+    top: 500;
+    left: 0px;
+    right: initial;
+    animation-delay: 5s;
+    animation-duration: 11s;
+}
+.star:nth-child(4){
+    top: 0;
+    left: 180px;
+    right: initial;
+    animation-delay: 1.6s;
+    animation-duration: 10.5s;
+}
+.star:nth-child(5){
+    top: 0;
+    left: 200px;
+    right: initial;
+    animation-delay: 0.8s;
+    animation-duration: 11.5s;
+}
+.star:nth-child(6){
+    top: 0;
+    left: 600px;
+    right: initial;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+.star:nth-child(7){
+    top: 300px;
+    left: 0px;
+    right: initial;
+    animation-delay: 1.2s;
+    animation-duration: 10.75s;
+}
+.star:nth-child(8){
+    top: 0px;
+    left: 700px;
+    right: initial;
+    animation-delay: 1.4s;
+    animation-duration: 10.25s;
+}
+.star:nth-child(9){
+    top: 0px;
+    left: 1000px;
+    right: initial;
+    animation-delay: 0.75s;
+    animation-duration: 11.25s;
+}
+.star:nth-child(10){
+    top: 0px;
+    left: 450px;
+    right: initial;
+    animation-delay: 5.75s;
+    animation-duration: 11.75s;
+}
+.star:nth-child(11){
+    top: 100px;
+    left: 0px;
+    right: initial;
+    animation-delay: 4.75s;
+    animation-duration: 10.75s;
+}
+.star:nth-child(12){
+    top: 600px;
+    left: 0px;
+    right: initial;
+    animation-delay: 2.75s;
+    animation-duration: 13.75s;
 }
