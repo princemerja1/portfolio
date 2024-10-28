@@ -7,20 +7,27 @@ export default function Hero() {
         <div className="hero-card">
           <div className="card card-l">
             <div className="h-full w-full p-4">
-              <div className="flex box-border">
-                <div className="name-img">
-                  <Image
-                    src="/hero.webp" // Path to the image file inside public
-                    alt="Namste" // Description for accessibility
-                    layout="responsive" // Responsive layout
-                    width={50} // Desired width
-                    height={50} // Desired height
-                    priority // Optional: use this for critical images (like a logo)
-                  />
+              <div className="upper flex box-border">
+                <div className="upper-l flex">
+                  <div className="name-img">
+                    <Image
+                      src="/hero.webp" // Path to the image file inside public
+                      alt="Namste" // Description for accessibility
+                      layout="responsive" // Responsive layout
+                      width={50} // Desired width
+                      height={50} // Desired height
+                      priority // Optional: use this for critical images (like a logo)
+                    />
+                  </div>
+                  <div className="text">
+                    <div className="name">Hey, I&apos;sm Prince.</div>
+                    <div className="passion">Digital Artist</div>
+                  </div>
                 </div>
-                <div className="text">
-                  <div className="name">Hey, I&apos;sm Prince.</div>
-                  <div className="passion">Digital Artist</div>
+                <div className="upper-r">
+                  <button>
+                    <div className="getintouch">Get In Touch</div>
+                  </button>
                 </div>
               </div>
               <div className="wc-container">
@@ -54,6 +61,12 @@ export default function Hero() {
           <div className="qt">
             We resolve problems associated with creative procedures.
           </div>
+        </div>
+        <div className="card card-3">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
+          nostrum quos eius odio facilis, consequuntur expedita aut eos aliquid
+          maxime dolore delectus neque? Porro, atque nulla consequuntur ipsum
+          repellat deserunt.
         </div>
       </div>
     </>

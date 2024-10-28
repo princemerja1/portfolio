@@ -42,7 +42,7 @@ export default function RootLayout({
           <span className="star"></span>
           <span className="star"></span>
         </section>
-        {children}
+        <div className="main-container">{children}</div>
       </body>
     </html>
   );
