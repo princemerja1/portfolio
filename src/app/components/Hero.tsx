@@ -10,7 +10,7 @@ export default function Hero() {
               <div className="flex box-border">
                 <div className="name-img">
                   <Image
-                    src="/Hero.webp" // Path to the image file inside public
+                    src="/hero.webp" // Path to the image file inside public
                     alt="Namste" // Description for accessibility
                     layout="responsive" // Responsive layout
                     width={50} // Desired width
