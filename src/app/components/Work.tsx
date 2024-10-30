@@ -1,8 +1,6 @@
 import "./Work.css";
 import "./card.css";
 
-import Image from "next/image";
-
 export default function Work() {
   return (
     <>
