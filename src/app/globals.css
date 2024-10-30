@@ -22,7 +22,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @layer utilities {
@@ -178,6 +178,17 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center; 
-    height: 100vh; 
-    margin: 50px 50px 0 50px; 
+    /* height: 100vh;  */
+    margin: 50px; 
+}
+
+@media (max-width: 768px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        /* height: 100vh;  */
+        margin: 20px; 
+    }
 }

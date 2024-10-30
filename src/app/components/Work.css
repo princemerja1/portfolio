@@ -1,0 +1,31 @@
+.work-main{
+  height: 100%;
+  width: 100%;
+  overflow: hiddens;
+}
+
+.work-main .recent-wrapper {
+  font-size: 30pt;
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.work-main .qt-text {
+  text-align: center;
+  padding: 50px;
+}
+
+.work-main .card-work1{
+  margin-top: 45px;
+  padding: 30px;
+  width: 100%;
+  height: 500px;
+}
+
+
+@media (max-width: 768px) {
+  
+}

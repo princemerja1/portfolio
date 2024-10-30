@@ -5,6 +5,7 @@
 .container-main{
   height: 100%;
   width: 100%;
+  overflow: hiddens;
 }
 
 .container-main .hero-card {
@@ -12,20 +13,8 @@
   height: 375px;
   width: 100%; 
   max-width: 100%; 
-  /* padding: 10px;  */
   box-sizing: border-box;
   border-radius: 5px;
-  /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-}
-.card {
-  background: linear-gradient(
-    103.16deg,
-    rgba(255, 255, 255, 0.07) 32.38%,
-    rgba(255, 255, 255, 0.01) 100%
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 53px; 
 }
 
 .container-main .hero-card .card-l {
@@ -83,15 +72,7 @@
   justify-items: center;
   display: flex;
 }
-.container-main .hero-card .card-l .upper-r .getintouch{
-  /* background: black; */
-  border: 2px solid rgba(92, 92, 92, 0.623);
-  border-radius: 10px;
-  width: 100%;
-  height: auto;
-  float:left;
-  padding: 10px 10px 10px 10px;
-}
+
 .container-main .hero-card .card-l .wc-container {
   margin-top: 5px;
 }
@@ -138,7 +119,225 @@
 }
 
 .container-main .card-3{
+  display: flex;
+  overflow: hidden;
   width: 100%;
-  height: 500px;
-  padding: 20px;
+  height: 350px;
+  margin-bottom: 50px;
+  padding: 20px 20px 0px 20px;
+}
+.container-main .card-3 .here-img{
+  align-items: center; 
+  justify-content: center; 
+  width: 45%;
+  margin-right: 45px; 
+  /* padding: 0 50px 0 50px; */
+  height: 100%; 
+  overflow: hidden; 
+}
+.container-main .card-3 .here-text{
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
+  height: 100%;
+  padding-top: 20px;
+  padding-right: 35px;
+}
+
+.container-main .card-3 .here-text .here-question {
+  font-size: 33pt;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.container-main .card-3 .here-text .here-question span {
+  font-family: "Instrument Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 38pt;
+}
+
+.container-main .card-3 .here-text .here-description {
+  margin-top: 5px;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18pt;
+}
+
+.container-main .card-3 .here-text .browsemywork{
+  margin-top: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .container-main{
+    height: 100%;
+    width: 100%;
+    overflow-x: hiddens;
+  }
+  
+  .container-main .hero-card {
+    display: flex;
+    flex-direction: column; 
+    height: 375px;
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .container-main .hero-card .card-l {
+    flex: 0 0 63%;
+    margin-right: 10px;
+    padding: 20px;
+  }
+  
+  .container-main .hero-card .card-r {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.07) 0%,
+      rgba(255, 255, 255, 0.01) 100%
+    );
+  
+    flex: 0 0 37%;
+  }
+  
+  
+  .container-main .hero-card .card-l:last-child {
+    margin-right: 0; 
+  }
+  .container-main .hero-card .card-l .upper{
+    width: 100%;
+    height: auto;
+  }
+  
+  .container-main .hero-card .card-l .upper-l{
+    width: 75%;
+  }
+  
+  .container-main .hero-card .card-l .upper-l .name-img {
+    max-width: 70px;
+  }
+  .container-main .hero-card .card-l .upper-l .text {
+    align-items: center;
+    margin-top: 12px;
+    height: auto;
+    font-size: 10pt;
+    color: white;
+  }
+  .container-main .hero-card .card-l .upper-l .text .name {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  .container-main .hero-card .card-l .upper-l .text .passion {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  .container-main .hero-card .card-l .upper-r{
+    justify-items: center;
+    display: flex;
+  }
+  
+  .container-main .hero-card .card-l .wc-container {
+    margin-top: 5px;
+  }
+  .container-main .hero-card .card-l .wc-container .wc-qt {
+    font-size: 33pt;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .container-main .hero-card .card-l .wc-container .wc-qt span {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 38pt;
+  }
+  .container-main .hero-card .card-l .wc-container .wc-description {
+    margin-top: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .container-main .hero-card .card-r .name-img {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 90%; 
+    height: 100%; 
+    overflow: hidden; 
+  }
+  
+  .container-main .qt-wrapper {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container-main .qt {
+    text-align: center;
+    margin: 50px;
+  }
+  
+  .container-main .card-3{
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 50px;
+    padding: 20px 20px 0px 20px;
+  }
+  .container-main .card-3 .here-img{
+    align-items: center; 
+    justify-content: center; 
+    width: 45%;
+    margin-right: 45px; 
+    /* padding: 0 50px 0 50px; */
+    height: 100%; 
+    overflow: hidden; 
+  }
+  .container-main .card-3 .here-text{
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
+    height: 100%;
+    padding-top: 20px;
+    padding-right: 35px;
+  }
+  
+  .container-main .card-3 .here-text .here-question {
+    font-size: 33pt;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .container-main .card-3 .here-text .here-question span {
+    font-family: "Instrument Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 38pt;
+  }
+  
+  .container-main .card-3 .here-text .here-description {
+    margin-top: 5px;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18pt;
+  }
+  
+  .container-main .card-3 .here-text .browsemywork{
+    margin-top: 10px;
+  }
 }

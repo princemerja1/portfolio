@@ -1,4 +1,6 @@
 import "./component.css";
+import "./card.css";
+import "./button.css"
 import Image from "next/image";
 export default function Hero() {
   return (
@@ -26,7 +28,7 @@ export default function Hero() {
                 </div>
                 <div className="upper-r">
                   <button>
-                    <div className="getintouch">Get In Touch</div>
+                    <div className="button getintouch">Get In Touch</div>
                   </button>
                 </div>
               </div>
@@ -50,9 +52,10 @@ export default function Hero() {
                 src="/Namste.webp" // Path to the image file inside public
                 alt="Namste" // Description for accessibility
                 layout="responsive" // Responsive layout
-                width={500} // Desired width
-                height={500} // Desired height
-                priority // Optional: use this for critical images (like a logo)
+                width={50} // Desired width
+                height={50} // Desired height
+                priority
+                // Optional: use this for critical images (like a logo)
               />
             </div>
           </div>
@@ -63,10 +66,30 @@ export default function Hero() {
           </div>
         </div>
         <div className="card card-3">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-          nostrum quos eius odio facilis, consequuntur expedita aut eos aliquid
-          maxime dolore delectus neque? Porro, atque nulla consequuntur ipsum
-          repellat deserunt.
+          <div className="here-img">
+            <Image
+              src="/here.webp" // Path to the image file inside public
+              alt="Here" // Description for accessibility
+              layout="responsive" // Responsive layout
+              width={50} // Desired width
+              height={50} // Desired height
+              priority // Optional: use this for critical images (like a logo)
+            />
+          </div>
+          <div className="here-text">
+            <div className="here-question">
+              What makes me <span>different?</span>
+            </div>
+            <div className="here-description">
+              I create unique digital art tailored by your desire. By merging
+              creativity with functionality and staying ahead of design trends,
+              I ensure every project not only looks stunning but also performs
+              flawlessly.
+            </div>
+            <button>
+              <div className="button browsemywork">Browse My Work</div>
+            </button>
+          </div>
         </div>
       </div>
     </>
