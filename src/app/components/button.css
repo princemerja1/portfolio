@@ -2,7 +2,7 @@
     /* background: black; */
     border: 2px solid rgba(92, 92, 92, 0.623);
     border-radius: 10px;
-    width: 100%;
+    width: auto;
     height: auto;
     float:left;
     padding: 10px 10px 10px 10px;

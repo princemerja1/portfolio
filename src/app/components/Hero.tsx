@@ -88,9 +88,9 @@ export default function Hero() {
               I ensure every project not only looks stunning but also performs
               flawlessly.
             </div>
-            <button>
+            <a href="/work">
               <div className="button browsemywork">Browse My Work</div>
-            </button>
+            </a>
           </div>
         </div>
       </div>
