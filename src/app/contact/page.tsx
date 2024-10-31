@@ -61,7 +61,7 @@ export default function Contact() {
             <textarea
               name="message"
               required
-              rows="3"
+              rows={3}
               placeholder="Enter Message"
             ></textarea>
           </div>
