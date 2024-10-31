@@ -1,6 +1,6 @@
 import "./component.css";
 import "./card.css";
-import "./button.css"
+import "./button.css";
 import Image from "next/image";
 export default function Hero() {
   return (
@@ -66,15 +66,17 @@ export default function Hero() {
           </div>
         </div>
         <div className="card card-3">
-          <div className="here-img">
-            <Image
-              src="/here.webp" // Path to the image file inside public
-              alt="Here" // Description for accessibility
-              layout="responsive" // Responsive layout
-              width={50} // Desired width
-              height={50} // Desired height
-              priority // Optional: use this for critical images (like a logo)
-            />
+          <div className="here-img-container">
+            <div className="here-img">
+              <Image
+                src="/here.webp" // Path to the image file inside public
+                alt="Here" // Description for accessibility
+                layout="responsive" // Responsive layout
+                width={50} // Desired width
+                height={50} // Desired height
+                priority // Optional: use this for critical images (like a logo)
+              />
+            </div>
           </div>
           <div className="here-text">
             <div className="here-question">

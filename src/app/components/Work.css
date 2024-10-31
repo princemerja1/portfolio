@@ -27,5 +27,7 @@
 
 
 @media (max-width: 768px) {
-  
+  .work-main{
+    display: none;
+  }
 }
