@@ -4,10 +4,10 @@ export default function Contact() {
   async function handleSubmit(e: {
     preventDefault: () => void;
     target: {
-      name: { value: any };
-      email: { value: any };
-      message: { value: any };
-      test: { value: any };
+      name: { value: unknown };
+      email: { value: unknown };
+      message: { value: unknown };
+      test: { value: unknown };
     };
   }) {
     e.preventDefault();
