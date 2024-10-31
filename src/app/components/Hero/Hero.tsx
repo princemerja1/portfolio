@@ -5,9 +5,6 @@ import "../button.css";
 import Link from 'next/link';
 import Image from "next/image";
 export default function Hero() {
-  const touch = () => {
-    console.log('Button clicked! Get in touch!');
-  };
   return (
     <>
       <div className="container-main">
