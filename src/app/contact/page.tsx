@@ -1,16 +1,19 @@
 "use client";
 import "./Contact.css";
+import React from "react";
+
 export default function Contact() {
-  async function handleSubmit(e: {
-    preventDefault: () => void;
-    target: {
-      name: { value: unknown };
-      email: { value: unknown };
-      message: { value: unknown };
-      test: { value: unknown };
-    };
-  }) {
+  // Use React.FormEvent<HTMLFormElement> for the event type
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
+    const form = e.currentTarget; // Get the current form element
+
+    // Access the form values
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+    const test = form.test.value;
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -20,12 +23,13 @@ export default function Contact() {
       },
       body: JSON.stringify({
         access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
-        name: e.target.name.value,
-        email: e.target.email.value,
-        message: e.target.message.value,
-        test: e.target.test.value,
+        name,
+        email,
+        message,
+        test,
       }),
     });
+    
     const result = await response.json();
     if (result.success) {
       console.log(result);
