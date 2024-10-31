@@ -27,7 +27,7 @@ export default function Hero() {
                     />
                   </div>
                   <div className="text">
-                    <div className="name">Hey, I&apos;sm Prince.</div>
+                    <div className="name">Hey, I&apos;m Prince.</div>
                     <div className="passion">Digital Artist</div>
                   </div>
                 </div>
