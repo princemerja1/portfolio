@@ -27,9 +27,9 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="upper-r">
-                  <button>
+                  <a>
                     <div className="button getintouch">Get In Touch</div>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div className="wc-container">
