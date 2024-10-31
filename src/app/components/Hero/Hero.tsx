@@ -32,9 +32,9 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="upper-r">
-                  <button onClick={() => touch()}>
+                  <Link href="/contact">
                     <div className="button getintouch">Get In Touch</div>
-                  </button>
+                  </Link>
                 </div>
               </div>
               <div className="wc-container">
