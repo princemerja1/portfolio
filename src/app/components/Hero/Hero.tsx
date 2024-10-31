@@ -1,8 +1,13 @@
-import "./component.css";
-import "./card.css";
-import "./button.css";
+'use client';
+import "./hero.css";
+import "../card.css";
+import "../button.css";
+import Link from 'next/link';
 import Image from "next/image";
 export default function Hero() {
+  const touch = () => {
+    console.log('Button clicked! Get in touch!');
+  };
   return (
     <>
       <div className="container-main">
@@ -27,9 +32,9 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="upper-r">
-                  <a>
+                  <button onClick={() => touch()}>
                     <div className="button getintouch">Get In Touch</div>
-                  </a>
+                  </button>
                 </div>
               </div>
               <div className="wc-container">
@@ -88,9 +93,9 @@ export default function Hero() {
               I ensure every project not only looks stunning but also performs
               flawlessly.
             </div>
-            <a href="/work">
+            <Link href="/work">
               <div className="button browsemywork">Browse My Work</div>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

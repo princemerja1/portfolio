@@ -1,5 +1,5 @@
 import "./Work.css";
-import "./card.css";
+import "../card.css";
 
 export default function Work() {
   return (
