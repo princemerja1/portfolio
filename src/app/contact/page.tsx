@@ -3,17 +3,16 @@ import "./Contact.css";
 import React from "react";
 
 export default function Contact() {
-  // Use React.FormEvent<HTMLFormElement> for the event type
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     const form = e.currentTarget; // Get the current form element
 
-    // Access the form values
-    const name = form.name.value;
-    const email = form.email.value;
-    const message = form.message.value;
-    const test = form.test.value;
+    // Explicitly cast form elements to their respective HTML types
+    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+    const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+    const test = (form.elements.namedItem("test") as HTMLInputElement).value;
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -29,7 +28,7 @@ export default function Contact() {
         test,
       }),
     });
-    
+
     const result = await response.json();
     if (result.success) {
       console.log(result);
