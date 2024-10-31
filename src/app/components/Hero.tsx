@@ -14,7 +14,7 @@ export default function Hero() {
                   <div className="name-img">
                     <Image
                       src="/hero.webp" // Path to the image file inside public
-                      alt="Namste" // Description for accessibility
+                      alt="Hero" // Description for accessibility
                       layout="responsive" // Responsive layout
                       width={50} // Desired width
                       height={50} // Desired height
