@@ -15,7 +15,7 @@ export default function Contact() {
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
       .value;
-    const test = (form.elements.namedItem("test") as HTMLInputElement).value;
+    const test = (form.elements.namedItem("Test") as HTMLInputElement).value;
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -60,7 +60,7 @@ export default function Contact() {
               type="text"
               name="Test"
               required
-              placeholder="test"
+              placeholder="Test"
             />
           </div>
           <div className="contact-container">
