@@ -1,10 +1,22 @@
 "use client";
+import { useEffect, useState } from "react";
 import "./Contact.css";
 import "../components/card.css";
 import "../components/button.css";
 import React from "react";
 
 export default function Contact() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true); // Ensures the component is client-side only
+  }, []);
+
+  const handleBack = () => {
+    if (isMounted) {
+      window.history.back(); // Navigates back in browser history
+    }
+  };
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -44,23 +56,23 @@ export default function Contact() {
       <div className="card contact-main-container">
         <form onSubmit={handleSubmit}>
           <div className="contact-container">
-            <label htmlFor="name">Name :</label>
+            <label htmlFor="fname">First Name :</label>
             <input
               className="border"
               type="text"
-              name="name"
+              name="firstname"
               required
-              placeholder="Your name"
+              placeholder="First name"
             />
           </div>
           <div className="contact-container">
-            <label htmlFor="test">Test :</label>
+            <label htmlFor="sname">Second Name :</label>
             <input
               className="border"
               type="text"
-              name="Test"
+              name="secondname"
               required
-              placeholder="Test"
+              placeholder="Second Name"
             />
           </div>
           <div className="contact-container">
@@ -74,6 +86,19 @@ export default function Contact() {
             />
           </div>
           <div className="contact-container">
+            <label htmlFor="num">
+              Number :
+            </label>
+            <input
+              className="border"
+              type="tel"
+              name="number"
+              required
+              placeholder="XXXXXXX485"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            />
+          </div>
+          <div className="contact-container">
             <label htmlFor="message">Message :</label>
             <textarea
               className="border"
@@ -84,7 +109,14 @@ export default function Contact() {
             ></textarea>
           </div>
           <button className="button border" type="submit">
-            Submit Form
+            Submit
+          </button>
+          <button
+            className="button border back"
+            onClick={handleBack}
+            disabled={!isMounted}
+          >
+            Go Back
           </button>
         </form>
       </div>
