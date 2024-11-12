@@ -23,11 +23,13 @@ export default function Contact() {
     const form = e.currentTarget; // Get the current form element
 
     // Explicitly cast form elements to their respective HTML types
-    const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+    const fname = (form.elements.namedItem("fname") as HTMLInputElement).value;
+    const sname = (form.elements.namedItem("sname") as HTMLInputElement).value;
+    const number = (form.elements.namedItem("number") as HTMLInputElement)
+      .value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
       .value;
-    const test = (form.elements.namedItem("Test") as HTMLInputElement).value;
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -37,10 +39,11 @@ export default function Contact() {
       },
       body: JSON.stringify({
         access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
-        name,
+        fname,
+        sname,
         email,
+        number,
         message,
-        test,
       }),
     });
 
@@ -60,7 +63,7 @@ export default function Contact() {
             <input
               className="border"
               type="text"
-              name="firstname"
+              name="fname"
               required
               placeholder="First name"
             />
@@ -70,7 +73,7 @@ export default function Contact() {
             <input
               className="border"
               type="text"
-              name="secondname"
+              name="sname"
               required
               placeholder="Second Name"
             />
@@ -86,16 +89,14 @@ export default function Contact() {
             />
           </div>
           <div className="contact-container">
-            <label htmlFor="num">
-              Number :
-            </label>
+            <label htmlFor="num">Number :</label>
             <input
-              className="border"
               type="tel"
               name="number"
               required
               placeholder="XXXXXXX485"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              maxLength={10}
+              minLength={10}
             />
           </div>
           <div className="contact-container">
