@@ -1,5 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
+// import { useRouter } from "next/router";
+import { useRouter } from "next/navigation"; // Import useRouter for navigation
 import "./Contact.css";
 import "../components/card.css";
 import "../components/button.css";
@@ -7,6 +9,7 @@ import React from "react";
 
 export default function Contact() {
   const [isMounted, setIsMounted] = useState(false);
+  const router = useRouter(); // Initialize router
 
   useEffect(() => {
     setIsMounted(true); // Ensures the component is client-side only
@@ -17,6 +20,7 @@ export default function Contact() {
       window.history.back(); // Navigates back in browser history
     }
   };
+
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
@@ -25,6 +29,7 @@ export default function Contact() {
     // Explicitly cast form elements to their respective HTML types
     const fname = (form.elements.namedItem("fname") as HTMLInputElement).value;
     const sname = (form.elements.namedItem("sname") as HTMLInputElement).value;
+    const cname = (form.elements.namedItem("cname") as HTMLInputElement).value;
     const number = (form.elements.namedItem("number") as HTMLInputElement)
       .value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
@@ -41,6 +46,7 @@ export default function Contact() {
         access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
         fname,
         sname,
+        cname,
         email,
         number,
         message,
@@ -50,6 +56,8 @@ export default function Contact() {
     const result = await response.json();
     if (result.success) {
       console.log(result);
+      // Redirect to the thank you page after successful submission
+      router.push("/thankyou"); // Ensure you have a /thankyou page created
     }
   }
 
@@ -79,6 +87,28 @@ export default function Contact() {
             />
           </div>
           <div className="contact-container">
+            <label htmlFor="cname">Company Name :</label>
+            <input
+              className="border"
+              type="text"
+              name="cname"
+              required
+              placeholder="Company Name"
+            />
+          </div>
+          <div className="contact-container">
+            <label htmlFor="num">Number :</label>
+            <input
+              className="border"
+              type="tel"
+              name="number"
+              required
+              placeholder="xxxxxxx485"
+              maxLength={10}
+              minLength={10}
+            />
+          </div>
+          <div className="contact-container">
             <label htmlFor="email">Email :</label>
             <input
               className="border"
@@ -86,17 +116,6 @@ export default function Contact() {
               name="email"
               required
               placeholder="email@example.com"
-            />
-          </div>
-          <div className="contact-container">
-            <label htmlFor="num">Number :</label>
-            <input
-              type="tel"
-              name="number"
-              required
-              placeholder="XXXXXXX485"
-              maxLength={10}
-              minLength={10}
             />
           </div>
           <div className="contact-container">

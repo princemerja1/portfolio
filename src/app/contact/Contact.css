@@ -48,6 +48,8 @@
   padding: 10px 10px 10px 10px;
 }
 
+
+
 @media (max-width: 425px) {
   .contact {
     font-family: "Poppins", serif;
@@ -78,7 +80,7 @@
     font-weight: 300;
     font-style: normal;
     font-size: 18px;
-    margin: 0 0 10px 5`px;
+    margin: 0 0 10px 7px;
   }
 
   .contact-container .border {

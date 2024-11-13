@@ -1,0 +1,29 @@
+/* thankyou.css */
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    text-align: center;
+  }
+  
+  .thank-you-container h1 {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .thank-you-container p {
+    font-size: 1.2rem;
+    color: white;
+  }
+  
+  .thank-you-container .button {
+    margin-top: 10px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  
