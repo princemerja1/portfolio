@@ -27,9 +27,9 @@ export default function Contact() {
     const form = e.currentTarget; // Get the current form element
 
     // Explicitly cast form elements to their respective HTML types
-    const fname = (form.elements.namedItem("fname") as HTMLInputElement).value;
-    const sname = (form.elements.namedItem("sname") as HTMLInputElement).value;
-    const cname = (form.elements.namedItem("cname") as HTMLInputElement).value;
+    const Firstname = (form.elements.namedItem("fname") as HTMLInputElement).value;
+    const Secondname = (form.elements.namedItem("sname") as HTMLInputElement).value;
+    const Companyname = (form.elements.namedItem("cname") as HTMLInputElement).value;
     const number = (form.elements.namedItem("number") as HTMLInputElement)
       .value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
@@ -44,9 +44,9 @@ export default function Contact() {
       },
       body: JSON.stringify({
         access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
-        fname,
-        sname,
-        cname,
+        Firstname,
+        Secondname,
+        Companyname,
         email,
         number,
         message,
