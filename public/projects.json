@@ -1,0 +1,21 @@
+[
+    {
+      "id": "1",
+      "title": "P2Verse - Website",
+      "description": "My Portfolio",
+      "image_url": "/projects/P2Verse/image.jpg"
+    },
+    {
+      "id": "2",
+      "title": "1st Valorant Montage",
+      "description": "First Valorant Montage",
+      "image_url": "/projects/1st_Montage/image.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Ganeshji Statue VFX",
+      "description": "Happy Ganesh Chaturthi",
+      "image_url": "/projects/GaneshJI_statue_in_park/image.jpg"
+    }
+  ]
+  
