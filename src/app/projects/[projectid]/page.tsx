@@ -1,7 +1,7 @@
 // /app/projects/[projectid]/page.tsx
 import fs from 'fs';
 import path from 'path';
-import { notFound } from 'next/navigation';
+import Image from 'next/image';
 
 interface WorkItem {
   id: string;
@@ -28,7 +28,7 @@ const ProjectDetailPage = async ({ params }: { params: { projectid: string } }) 
   return (
     <div>
       <h1>{project.title}</h1>
-      <img src={project.image_url} alt={project.title} />
+      <Image src={project.image_url} alt={project.title} />
       <p>{project.description}</p>
     </div>
   );
