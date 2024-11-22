@@ -5,8 +5,6 @@ import Image from "next/image";
 import "../components/card.css";
 import "./project.css";
 
-import { notFound } from "next/navigation";
-
 interface WorkItem {
   id: string;
   title: string;
