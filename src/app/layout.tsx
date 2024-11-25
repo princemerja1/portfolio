@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Prince Merja",
@@ -14,26 +14,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`antialiased z-9`}
-      >
-        <section className="-z-50">
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-          <span className="star"></span>
-        </section>
-        <div className="main-container">{children}</div>
-      </body>
-    </html>
+    <>
+      <Analytics />
+      <SpeedInsights />
+      <html lang="en">
+        <body className={`antialiased z-9`}>
+          <section className="-z-50">
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+            <span className="star"></span>
+          </section>
+          <div className="main-container">{children}</div>
+        </body>
+      </html>
+    </>
   );
 }
