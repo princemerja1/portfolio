@@ -1,23 +1,45 @@
 [
   {
     "id": "1",
-    "title": "P2Verse - Website",
-    "image_url": "/projects/P2Verse/image.jpg",
-    "url": "https://princemerja.vercel.app",
-    "description": "My website serves as a dynamic portfolio that showcases my skills, creativity, and the projects I've worked on. It's built using modern technologies like Next.js, TypeScript, and hosted on Vercel, ensuring fast performance and a seamless user experience. The site is designed to be responsive, adapting beautifully to all devices from desktops to mobiles. Each project is displayed interactively, with hover effects and smooth transitions, allowing visitors to explore my work in depth. The content is dynamically fetched, ensuring that I can easily update and add new projects without manual coding. The platform is designed to grow with my career, with plans to integrate a CMS for easy content management, along with the potential to expand into areas like gaming or VFX."
+    "title": "VR Music Player",
+    "image_url": "VRMusicApp",
+    "url": "https://www.instagram.com/reel/CrNGUM6BTMU/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "description": "VFX VR Music App is an innovative mobile application designed to immerse users in a cutting-edge audiovisual experience. By combining the power of Virtual Reality (VR) with mesmerizing visual effects (VFX), this app offers a truly interactive and engaging way to enjoy music. Users can enjoy their favorite tracks while being surrounded by dynamic, 3D visuals that respond to the rhythm, beats, and melodies in real-time.The app transforms any music session into a visually stunning journey, with customized VR environments that enhance the music experience. Whether you’re at home, on-the-go, or in a VR headset, the VFX VR Music App brings your music to life, allowing you to explore and interact with your audio in a whole new dimension.From calming, ambient visuals to intense, high-energy effects synced to fast-paced beats, the app provides a diverse range of VR settings to suit any music genre. Perfect for music lovers, VR enthusiasts, and anyone seeking a deeper connection with sound and visuals, the app creates a fully immersive experience that stimulates both the eyes and ears."
   },
   {
     "id": "2",
-    "title": "1st Valorant Montage - Thumbnail",
-    "description": "My First Valorant Montage is a highlight of my best moments in Valorant, showcasing a mix of sharp aim, clutch plays, and strategic teamwork. This video captures the intense highs of the game—from securing multi-kills to turning the tide of a round with tactical brilliance. Each clip reflects my growth as a player, from learning the mechanics to understanding the importance of teamwork and strategy. With fast-paced editing and a high-energy soundtrack, this montage gives a glimpse into my journey as I strive to improve and push my limits in Valorant. It’s the first step in my competitive journey, and I’m excited to share more epic moments as I continue to evolve in the game.",
-    "image_url": "/projects/1st_Montage/image.jpg",
-    "url": ""
+    "title": "The Forgotten Road",
+    "image_url": "TheForgottenRoad",
+    "url":"https://www.instagram.com/reel/CuRu9lwBv_D/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "description": "The Forgotten Road is a fully CGI (Computer-Generated Imagery) video that transports viewers into a stunning, imaginary world, where an ancient, long-forgotten road unfolds a mysterious and captivating story. Crafted with meticulous attention to detail, this short film takes the audience on a journey through breathtaking landscapes, featuring winding paths, overgrown forests, and distant horizons that evoke a sense of adventure and nostalgia.The road itself becomes a character in the narrative, symbolizing a lost passage to something greater. The visuals are rich with atmospheric lighting, lifelike textures, and intricately designed environments, showcasing the full power of CGI to create a world that feels both surreal and tangible. From the soft glow of sunrise to the eerie shadows cast by towering trees, every frame of the video is designed to pull viewers into its immersive, dream-like atmosphere.As the video progresses, the road reveals its secrets, intertwined with hints of the past and echoes of forgotten stories, all while the cinematography and CGI effects seamlessly guide the viewer through this hauntingly beautiful journey. The Forgotten Road is not just a visual spectacle; it's an emotional exploration of solitude, time, and the passage of life, presented through the lens of advanced CGI technology.This video is perfect for fans of high-quality CGI animation, storytelling through visuals, and immersive, thought-provoking narratives. It’s a visual masterpiece that showcases the potential of computer-generated imagery in delivering cinematic experiences that stir the imagination and evoke deep emotions."
   },
+
   {
     "id": "3",
+    "title": "1st Valorant Montage - Thumbnail",
+    "image_url": "1st_Montage",
+    "url": "",
+    "description": "My First Valorant Montage is a highlight of my best moments in Valorant, showcasing a mix of sharp aim, clutch plays, and strategic teamwork. This video captures the intense highs of the game—from securing multi-kills to turning the tide of a round with tactical brilliance. Each clip reflects my growth as a player, from learning the mechanics to understanding the importance of teamwork and strategy. With fast-paced editing and a high-energy soundtrack, this montage gives a glimpse into my journey as I strive to improve and push my limits in Valorant. It’s the first step in my competitive journey, and I’m excited to share more epic moments as I continue to evolve in the game."
+  },
+  {
+    "id": "4",
+    "title": "Roman Broken Statue",
+    "image_url": "RomanStatue",
+    "url": "https://www.instagram.com/reel/CwHRciMI_I_/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "description": "Roman Broken Statue is a visually captivating video that delves into the haunting beauty of ancient history, bringing to life a broken statue from the Roman era. This video features a meticulously crafted 3D animation of a once majestic Roman statue, now weathered and shattered by time. The video captures the intricate details of the broken marble, showcasing cracks, chipped pieces, and the ravages of centuries, all while highlighting the statue's once grand form and the artistry behind its creation.Through dramatic lighting and careful animation, the video emphasizes the emotional weight of the statue's decay, evoking themes of lost history, the passage of time, and the fragility of human creations. The ruins of the statue stand as a silent witness to a glorious past, its fractured form symbolizing both destruction and preservation. The background, filled with ancient Roman architecture and soft, atmospheric tones, further enhances the feeling of a forgotten civilization, now only preserved in the broken remnants of its art.The video is a blend of historical reverence and artistic expression, showcasing the timeless appeal of ancient Roman culture while exploring the contrast between beauty and ruin. Roman Broken Statue serves as a powerful reminder of the impermanence of even the greatest human achievements, leaving viewers with a sense of reflection and awe for the lasting impact of history's artistic legacy."
+  },
+  {
+    "id": "5",
     "title": "Ganeshji Statue VFX",
-    "description": "Ganeshji VFX is a stunning VFX creation where I integrated digital effects into a real-world scene featuring a Ganeshji murti placed on a large rock surrounded by lush greenery. The project combines traditional religious symbolism with modern visual effects, bringing the scene to life in an artistic and immersive way. I used VFX to enhance the natural surroundings, adding subtle lighting effects, mystical elements, and a sense of divine presence around the murti. The rock, covered with vibrant greenery, serves as a beautiful contrast to the digital enhancements, highlighting the fusion of nature and spirituality. This project showcases my ability to blend real-world footage with creative visual effects, making Ganeshji's presence feel even more powerful and ethereal in the tranquil setting.",
-    "image_url": "/projects/GaneshJI_statue_in_park/image.jpg",
-    "url": "https://www.instagram.com/reel/CxYJCzVMEsc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+    "image_url": "GaneshJI_statue_in_park",
+    "url": "https://www.instagram.com/reel/CxYJCzVMEsc/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+    "description": "Ganeshji VFX is a stunning VFX creation where I integrated digital effects into a real-world scene featuring a Ganeshji murti placed on a large rock surrounded by lush greenery. The project combines traditional religious symbolism with modern visual effects, bringing the scene to life in an artistic and immersive way. I used VFX to enhance the natural surroundings, adding subtle lighting effects, mystical elements, and a sense of divine presence around the murti. The rock, covered with vibrant greenery, serves as a beautiful contrast to the digital enhancements, highlighting the fusion of nature and spirituality. This project showcases my ability to blend real-world footage with creative visual effects, making Ganeshji's presence feel even more powerful and ethereal in the tranquil setting."
+  },
+  {
+    "id": "8",
+    "title": "P2Verse - Website",
+    "image_url": "P2Verse",
+    "url": "https://princemerja.vercel.app",
+    "description": "My website serves as a dynamic portfolio that showcases my skills, creativity, and the projects I've worked on. It's built using modern technologies like Next.js, TypeScript, and hosted on Vercel, ensuring fast performance and a seamless user experience. The site is designed to be responsive, adapting beautifully to all devices from desktops to mobiles. Each project is displayed interactively, with hover effects and smooth transitions, allowing visitors to explore my work in depth. The content is dynamically fetched, ensuring that I can easily update and add new projects without manual coding. The platform is designed to grow with my career, with plans to integrate a CMS for easy content management, along with the potential to expand into areas like gaming or VFX."
   }
 ]

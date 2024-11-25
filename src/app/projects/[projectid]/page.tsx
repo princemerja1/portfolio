@@ -46,7 +46,7 @@ const ProjectDetailPage = async ({
         <a href={project.url}>
           <div className="workid-img">
             <Image
-              src={project.image_url}
+              src={`/projects/${project.image_url}/image.jpg`}
               width={1600}
               height={900}
               alt={project.title}

@@ -18,8 +18,8 @@ interface WorkItem {
 async function getProjects(): Promise<WorkItem[]> {
   const filePath = path.join(process.cwd(), "public", "projects.json");
   const fileContent = fs.readFileSync(filePath, "utf8");
-  return JSON.parse(fileContent);
-  
+  const project = JSON.parse(fileContent);
+  return project.reverse();
 }
 
 const BrowseMyWorkPage = async () => {
@@ -41,7 +41,7 @@ const BrowseMyWorkPage = async () => {
                 <Image
                   className="img z-0"
                   alt={project.title}
-                  src={project.image_url}
+                  src={`/projects/${project.image_url}/image.jpg`}
                   fill
                 />
                 <div className="card-text z-10">
