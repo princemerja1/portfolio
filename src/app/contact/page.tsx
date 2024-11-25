@@ -98,7 +98,7 @@ export default function Contact() {
             />
           </div>
           <div className="contact-container">
-            <label htmlFor="num">Number :</label>
+            <label htmlFor="num">Contact Number :</label>
             <input
               className="border"
               type="tel"
