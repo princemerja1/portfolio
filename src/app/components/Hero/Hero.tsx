@@ -9,14 +9,14 @@ export default function Hero() {
     <>
       <div className="container-main">
         <div className="hero-card">
-          <div className="card card-l">
+          <div className="card card-hero card-l">
             <div className="h-full w-full p-4">
               <div className="upper flex box-border">
                 <div className="upper-l flex">
                   <div className="name-img">
                     <Image
                       src="/hero.webp" // Path to the image file inside public
-                      alt="Hero" // Description for accessibility
+                      alt="Hero"
                       layout="responsive" // Responsive layout
                       width={50} // Desired width
                       height={50} // Desired height
@@ -48,12 +48,12 @@ export default function Hero() {
             </div>
           </div>
           <br />
-          <div className="card card-r">
+          <div className="card card-hero card-r">
             <div className="name-img">
               <Image
                 src="/Namste.webp" // Path to the image file inside public
-                alt="Namste" // Description for accessibility
-                layout="responsive" // Responsive layout
+                alt="Namste" 
+                layout="responsive"// Responsive layout
                 width={50} // Desired width
                 height={50} // Desired height
                 priority
@@ -67,13 +67,13 @@ export default function Hero() {
             We resolve problems associated with creative procedures.
           </div>
         </div>
-        <div className="card card-3">
+        <div className="card card-hero card-3">
           <div className="here-img-container">
             <div className="here-img">
               <Image
                 src="/here.webp" // Path to the image file inside public
-                alt="Here" // Description for accessibility
-                layout="responsive" // Responsive layout
+                alt="Here" 
+                layout="responsive"// Responsive layout
                 width={50} // Desired width
                 height={50} // Desired height
                 priority // Optional: use this for critical images (like a logo)

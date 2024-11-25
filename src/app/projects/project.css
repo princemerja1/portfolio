@@ -1,10 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
+
 .center-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Full viewport height */
-  text-align: center; /* Center text inside the h1 */
+  justify-content: center; /* Centers the title horizontally */
+  align-items: center; /* Aligns items vertically */
+  position: relative; /* Allows absolute positioning for the back button */
+  padding: 20px 0; /* Adds spacing above and below the header */
+}
+
+.back {
+  position: absolute; 
+  color: white;/* Take it out of the flow and position it */
+  left: 20px; /* Keep it aligned to the left */
+  top: 50%; /* Vertically center it */
+  transform: translateY(-50%); /* Adjust for vertical alignment */
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-size: 1rem;
+  font-style: normal;
+  padding: 8px 16px;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.back:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -18,7 +43,7 @@ h1 {
   padding: 20px;
   width: auto;
   height: 300px;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -55,15 +80,15 @@ h1 {
   z-index: 0; /* Ensure the image is below the text */
 }
 
-.text {
+.card-text {
   border-radius: 10px;
   background: linear-gradient(
     0deg,
     rgba(255, 255, 255, 0.07) 0%,
     rgba(255, 255, 255, 0) 90%
   );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   width: 100%;
   position: absolute; /* Position the text absolutely inside the container */
   bottom: 0; /* Start off-screen */
@@ -75,11 +100,11 @@ h1 {
   opacity: 1; /* Initially hide the text */
   height: 20%; /* Initially set height to 0 (collapsed) */
   overflow: hidden; /* Hide text when collapsed */
-  transition: height 0.7s ease, opacity 0.5s ease, bottom 0.5s ease,
+  transition: height 0.7s ease-in-out, opacity 0.5s ease, bottom 0.5s ease,
     transform 0.5s ease; /* Smooth transition for opacity, height, bottom, and transform */
 }
 
-.card-project:hover .text {
+.card-project:hover .card-text {
   height: 100%; /* Expand text container to 100% height */
   bottom: 0; /* Move text into view */
   opacity: 1; /* Make the text visible */
@@ -92,8 +117,8 @@ h1 {
   font-family: "Poppins", serif;
   font-weight: 800;
   font-style: normal;
-  font-size: 1.25rem;
-  font-weight: bold;
+  /* font-size: 25pt; */
+  /* font-size: 1.5rem; */
   color: #ffffff;
 }
 .card-content h3 {
@@ -104,34 +129,102 @@ h1 {
 
 .card-content p {
   font-family: "Poppins", serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
 
   font-size: 1rem;
   color: #ffffff;
 }
 
-@media (max-width: 1024px) {
-    .card-project{
-        height: 300px;
-    }
+@media (max-width: 2560px) {
+  .back{
+    display: flex;
+  }
+  .card-text{
+    height : 20%;
+  }
+  h2{
+    font-size: 30pt;
+  }
+  .card-project {
+    height: 450px;
+    padding: 20px;
+  }
   .project-grid {
     grid-template-columns: repeat(3, 1fr); /* 3 columns for tablets */
   }
 }
+@media (max-width: 1440px) {
+  .back{
+    display: flex;
+  }
+  .card-text{
+    height : 25%;
+  }
+  .card-project {
+    height: 350px;
+    padding: 20px;
+  }
+  h2{
+    font-size: 30pt;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns for tablets */
+  }
+}
+@media (max-width: 1024px) {
+  .back{
+    display: flex;
+  }
+  .card-text{
+    height : 25%;
+  }
+  .card-project {
+    height: 250px;
+    padding: 15px;
+  }
+  h2{
+    font-size: 20pt;
+  }
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns for tablets */
+  }
+}
 /* Small screens (mobile) */
 @media (max-width: 768px) {
-    .card-project{
-        height: 300px;
-    }
+  .back{
+    display: none;
+  }
+  .card-text{
+    height : 25%;
+  }
+  .card-project {
+    padding: 10px;
+    height: 200px;
+  }
+  h2{
+    font-size: 15pt;
+  }
   .project-grid {
+    margin: 10px;
     grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
   }
 }
 
 /* Extra small screens (very small mobile) */
 @media (max-width: 480px) {
+  .card-text{
+    height : 25%;
+  }
+  .card-project {
+    padding: 10px;
+    height: 200px;
+  }
+  h2{
+    font-size: 11pt;
+  }
   .project-grid {
+    margin: 5px;
     grid-template-columns: 1fr; /* 1 column for very small screens */
   }
 }

@@ -2,7 +2,9 @@
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
+import Link from "next/link";
 import "../components/card.css";
+import "../components/button.css";
 import "./project.css";
 
 interface WorkItem {
@@ -10,6 +12,7 @@ interface WorkItem {
   title: string;
   description: string;
   image_url: string;
+  url: string;
 }
 
 async function getProjects(): Promise<WorkItem[]> {
@@ -24,22 +27,30 @@ const BrowseMyWorkPage = async () => {
   return (
     <div className="w-screen">
       <div className="center-container">
+        <Link href="/">
+          <div className="button back">{"< Go Back"}</div>
+        </Link>
         <h1>Browse My Work</h1>
       </div>
       <div className="project-grid">
         {projects.map((project) => (
           <div className="card card-project" key={project.id}>
-            <a href={`/projects/${project.id}`}>
+            <Link href={`/projects/${project.id}`}>
               <div className="card-content">
-                <Image className="img z-0" alt={project.title} src={project.image_url} fill/>
-                <div className="text z-10">
-
-                <h2>{project.title}</h2>
-                <h3>-----------------------</h3>
-                <p>{project.description}</p>
+                <Image
+                  className="img z-0"
+                  alt={project.title}
+                  src={project.image_url}
+                  fill
+                />
+                <div className="card-text z-10">
+                  <h2>{project.title}</h2>
+                  <h3>-----------------------</h3>
+                  {/* <Link href={`https://${project.url}`}>{project.url}</Link> */}
+                  <p>{project.description}</p>
                 </div>
               </div>
-            </a>
+            </Link>
           </div>
         ))}
       </div>

@@ -1,21 +1,23 @@
 [
-    {
-      "id": "1",
-      "title": "P2Verse - Website",
-      "description": "My Portfolio",
-      "image_url": "/projects/P2Verse/image.jpg"
-    },
-    {
-      "id": "2",
-      "title": "1st Valorant Montage",
-      "description": "First Valorant Montage",
-      "image_url": "/projects/1st_Montage/image.jpg"
-    },
-    {
-      "id": "3",
-      "title": "Ganeshji Statue VFX",
-      "description": "Happy Ganesh Chaturthi",
-      "image_url": "/projects/GaneshJI_statue_in_park/image.jpg"
-    }
-  ]
-  
+  {
+    "id": "1",
+    "title": "P2Verse - Website",
+    "image_url": "/projects/P2Verse/image.jpg",
+    "url": "https://princemerja.vercel.app",
+    "description": "My website serves as a dynamic portfolio that showcases my skills, creativity, and the projects I've worked on. It's built using modern technologies like Next.js, TypeScript, and hosted on Vercel, ensuring fast performance and a seamless user experience. The site is designed to be responsive, adapting beautifully to all devices from desktops to mobiles. Each project is displayed interactively, with hover effects and smooth transitions, allowing visitors to explore my work in depth. The content is dynamically fetched, ensuring that I can easily update and add new projects without manual coding. The platform is designed to grow with my career, with plans to integrate a CMS for easy content management, along with the potential to expand into areas like gaming or VFX."
+  },
+  {
+    "id": "2",
+    "title": "1st Valorant Montage",
+    "description": "My First Valorant Montage is a highlight reel of my best moments in Valorant, showcasing a mix of sharp aim, clutch plays, and strategic teamwork. This video captures the intense highs of the game—from securing multi-kills to turning the tide of a round with tactical brilliance. Each clip reflects my growth as a player, from learning the mechanics to understanding the importance of teamwork and strategy. With fast-paced editing and a high-energy soundtrack, this montage gives a glimpse into my journey as I strive to improve and push my limits in Valorant. It’s the first step in my competitive journey, and I’m excited to share more epic moments as I continue to evolve in the game.",
+    "image_url": "/projects/1st_Montage/image.jpg",
+    "url": "princemerja.vercel.app"
+  },
+  {
+    "id": "3",
+    "title": "Ganeshji Statue VFX",
+    "description": "Ganeshji VFX is a stunning VFX creation where I integrated digital effects into a real-world scene featuring a Ganeshji murti placed on a large rock surrounded by lush greenery. The project combines traditional religious symbolism with modern visual effects, bringing the scene to life in an artistic and immersive way. I used VFX to enhance the natural surroundings, adding subtle lighting effects, mystical elements, and a sense of divine presence around the murti. The rock, covered with vibrant greenery, serves as a beautiful contrast to the digital enhancements, highlighting the fusion of nature and spirituality. This project showcases my ability to blend real-world footage with creative visual effects, making Ganeshji's presence feel even more powerful and ethereal in the tranquil setting.",
+    "image_url": "/projects/GaneshJI_statue_in_park/image.jpg",
+    "url": "princemerja.vercel.app"
+  }
+]
