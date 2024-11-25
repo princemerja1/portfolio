@@ -19,13 +19,117 @@
 }
 
 .work-main .card-work{
-  margin-top: 45px;
-  padding: 30px;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 10px;
   width: 100%;
-  height: 500px;
+  height: auto;
 }
 
+.work-main .card-work .image{
+  border-radius: 10px;
+  overflow: hidden;
+}
 
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 3 columns */
+  gap: 20px; /* Spacing between grid items */
+}
+
+.work-main .card-work .image {
+  width: 100%;
+}
+.browsemywork-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+.browsemywork {
+  display: inline-block;
+  margin: 20px auto; /* Center the link horizontally and add spacing from the grid */
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.browsemywork:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 2560px) {
+  .back{
+    display: flex;
+  }
+  p{
+    font-size: 40pt;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between grid items */
+  }
+
+  
+}
+@media (max-width: 1440px) {
+  .back{
+    display: flex;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between grid items */
+  }
+  
+}
+@media (max-width: 1024px) {
+  .back{
+    display: flex;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between grid items */
+  }
+  
+}
+/* Small screens (mobile) */
 @media (max-width: 768px) {
+  .back{
+    display: none;
+  }
+  .card-work{
+    border-radius: 20px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    gap: 20px; /* Spacing between grid items */
+  }
+  
+}
+
+/* Extra small screens (very small mobile) */
+@media (max-width: 480px) {
+  .back{
+    display: none;
+  }
+  .card-work{
+    border-radius: 20px;
+  }
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 3 columns */
+    gap: 2px;
+  }
   
 }

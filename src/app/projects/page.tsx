@@ -19,6 +19,7 @@ async function getProjects(): Promise<WorkItem[]> {
   const filePath = path.join(process.cwd(), "public", "projects.json");
   const fileContent = fs.readFileSync(filePath, "utf8");
   return JSON.parse(fileContent);
+  
 }
 
 const BrowseMyWorkPage = async () => {
