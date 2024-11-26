@@ -28,7 +28,7 @@ export default function Contact() {
 
     // Explicitly cast form elements to their respective HTML types
     const Firstname = (form.elements.namedItem("fname") as HTMLInputElement).value;
-    const Secondname = (form.elements.namedItem("sname") as HTMLInputElement).value;
+    const Lastname = (form.elements.namedItem("sname") as HTMLInputElement).value;
     const Companyname = (form.elements.namedItem("cname") as HTMLInputElement).value;
     const number = (form.elements.namedItem("number") as HTMLInputElement)
       .value;
@@ -46,7 +46,7 @@ export default function Contact() {
       body: JSON.stringify({
         access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
         Firstname,
-        Secondname,
+        Lastname,
         Companyname,
         email,
         number,
@@ -78,13 +78,13 @@ export default function Contact() {
             />
           </div>
           <div className="contact-container">
-            <label htmlFor="sname">Second Name :</label>
+            <label htmlFor="sname">Last Name :</label>
             <input
               className="border"
               type="text"
               name="sname"
               required
-              placeholder="Second Name"
+              placeholder="Last Name"
             />
           </div>
           <div className="contact-container">
@@ -124,7 +124,6 @@ export default function Contact() {
             <textarea
               className="border"
               name="message"
-              required
               rows={3}
               placeholder="Enter Message"
             ></textarea>
