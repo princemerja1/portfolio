@@ -2,6 +2,10 @@
 
 # dependencies
 /node_modules
+/public/projects/node_modules
+/public/projects/index.js
+/public/projects/package-lock.json
+/public/projects/package.json
 /.pnp
 .pnp.js
 .yarn/install-state.gz
