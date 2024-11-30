@@ -1,3 +1,4 @@
+//app/components/Work/Work.tsx
 import "./Work.css";
 import "../card.css";
 import Image from "next/image";

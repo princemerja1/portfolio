@@ -1,3 +1,4 @@
+// app/thankyou/page.tsx
 "use client";
 import "./thankyou.css";
 import "../components/button.css";

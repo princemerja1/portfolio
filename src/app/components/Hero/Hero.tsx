@@ -1,3 +1,5 @@
+//app/components/hero/hero.tsx
+
 'use client';
 import "./hero.css";
 import "../card.css";

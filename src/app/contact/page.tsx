@@ -1,3 +1,4 @@
+//app/contact/page.tsx
 "use client";
 import { useEffect, useState } from "react";
 // import { useRouter } from "next/router";
@@ -36,30 +37,35 @@ export default function Contact() {
     const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
       .value;
 
-    
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
-        Firstname,
-        Lastname,
-        Companyname,
-        email,
-        number,
-        message,
-      }),
-    });
+    try{
 
-    const result = await response.json();
-    if (result.success) {
-      console.log(result);
-      // Redirect to the thank you page after successful submission
-      router.push("/thankyou"); // Ensure you have a /thankyou page created
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "8a12f2cf-fbda-4e60-a2b4-0e28039e885e",
+          Firstname,
+          Lastname,
+          Companyname,
+          email,
+          number,
+          message,
+        }),
+      });
+      
+      const result = await response.json();
+      if (!result.success) {
+        throw new Error("Submission failed");
+      }
+      router.push("/thankyou");
+    } catch (error) {
+      console.error("Error during form submission:", error);
+      // Optionally show an error message to the user
     }
+  
   }
 
   return (
