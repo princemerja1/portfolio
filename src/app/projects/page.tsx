@@ -1,8 +1,6 @@
-// /app/projects/page.tsx
-import fs from "fs";
-import path from "path";
-import Image from "next/image";
-import Link from "next/link";
+// /src/app/projects/page.tsx
+import Image from 'next/image';
+import Link from 'next/link';
 import "../components/card.css";
 import "../components/button.css";
 import "./project.css";
@@ -15,15 +13,15 @@ interface WorkItem {
   url: string;
 }
 
-async function getProjects(): Promise<WorkItem[]> {
-  const filePath = path.join(process.cwd(), "public", "projects.json");
-  const fileContent = fs.readFileSync(filePath, "utf8");
-  const project = JSON.parse(fileContent);
-  return project.reverse();
-}
+// Fetch the project data from the API route
+const fetchProjects = async (): Promise<WorkItem[]> => {
+  const response = await fetch('/api/projects');
+  const projects = await response.json();
+  return projects.reverse();
+};
 
 const BrowseMyWorkPage = async () => {
-  const projects = await getProjects();
+  const projects = await fetchProjects(); // Fetch data from API
 
   return (
     <div className="w-screen">
@@ -47,7 +45,6 @@ const BrowseMyWorkPage = async () => {
                 <div className="card-text z-10">
                   <h2>{project.title}</h2>
                   <h3>-----------------------</h3>
-                  {/* <Link href={`https://${project.url}`}>{project.url}</Link> */}
                   <p>{project.description}</p>
                 </div>
               </div>
