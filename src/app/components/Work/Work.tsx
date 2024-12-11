@@ -36,7 +36,7 @@ const WorkPage = async () => {
                 <div className="image">
                   <Image
                     alt={project.title}
-                    src={`/projects/${project.image_url}/image.jpg`}
+                    src={project.image_url ? `/projects/${project.image_url}/image.jpg` : '/default-image.jpg'}
                     width="1600"
                     height="900"
                   />

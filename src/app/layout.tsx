@@ -18,6 +18,7 @@ export default function RootLayout({
       <Analytics />
       <SpeedInsights />
       <html lang="en">
+        <meta name="author" content="Prince Merja" />
         <body className={`antialiased z-9`}>
           <section className="-z-50">
             <span className="star"></span>

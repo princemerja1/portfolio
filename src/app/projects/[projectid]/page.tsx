@@ -34,6 +34,8 @@ const ProjectDetailPage = async ({
     return <div>Project not found</div>;
   }
 
+
+
   return (
     <div className="projectid-container">
       <div className="center-container">
@@ -46,7 +48,7 @@ const ProjectDetailPage = async ({
         <a href={project.url}>
           <div className="workid-img">
             <Image
-              src={`/projects/${project.image_url}/image.jpg`}
+                src={project.image_url ? `/projects/${project.image_url}/image.jpg` : '/default-image.jpg'}
               width={1600}
               height={900}
               alt={project.title}
