@@ -36,7 +36,7 @@ const SmartLink = ({ url }: { url: string }) => {
           </button>
         </div>
       ) : (
-        <a href={url} target="_blank" rel="noopener noreferrer">
+        <a href={url} target="_system" rel="noopener noreferrer">
           Open Link
         </a>
       )}
