@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 
 // Detect if the user is in an in-app browser
 const isInAppBrowser = () => {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  const userAgent = navigator.userAgent || navigator.vendor;
   return /Instagram|FBAV|Twitter/.test(userAgent);  // Checking for Instagram, Facebook, and Twitter in-app browsers
 };
 
