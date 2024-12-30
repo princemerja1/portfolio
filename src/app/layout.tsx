@@ -15,6 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
+    <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <Analytics />
       <SpeedInsights />
       <html lang="en">

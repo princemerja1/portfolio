@@ -52,7 +52,7 @@
     "id": "8",
     "title": "P2Verse - Website",
     "image_url": "P2Verse",
-    "url": "https://princemerja.vercel.app",
+    "url": "https://princemerja.me",
     "description": "My website serves as a dynamic portfolio that showcases my skills, creativity, and the projects I've worked on. It's built using modern technologies like Next.js, TypeScript, and hosted on Vercel, ensuring fast performance and a seamless user experience. The site is designed to be responsive, adapting beautifully to all devices from desktops to mobiles. Each project is displayed interactively, with hover effects and smooth transitions, allowing visitors to explore my work in depth. The content is dynamically fetched, ensuring that I can easily update and add new projects without manual coding. The platform is designed to grow with my career, with plans to integrate a CMS for easy content management, along with the potential to expand into areas like gaming or VFX."
   }
 ]
