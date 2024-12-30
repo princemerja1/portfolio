@@ -16,11 +16,12 @@ const SmartLink = ({ url }: { url: string }) => {
   }, []);
 
   const openInBrowser = () => {
-    // Try to open the link in the default browser
+    // Attempt to open the link in a new tab or browser
     const newWindow = window.open(url, '_blank');
     
-    // If the pop-up is blocked, use location.href as a fallback
+    // Check if the pop-up was blocked or failed, then fallback to opening the link in the same tab
     if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+      // Attempt to open the URL in the same tab
       window.location.href = url;
     }
   };
