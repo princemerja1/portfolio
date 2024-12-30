@@ -17,7 +17,7 @@ const SmartLink = ({ url }: { url: string }) => {
 
   const openInBrowser = () => {
     // Attempt to open the link in a new tab or browser
-    const newWindow = window.open(url, '_blank');
+    const newWindow = window.open(url, '_system');
     
     // Check if the pop-up was blocked or failed, then fallback to opening the link in the same tab
     if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
