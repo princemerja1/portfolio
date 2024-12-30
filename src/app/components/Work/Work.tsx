@@ -31,8 +31,8 @@ const WorkPage = async () => {
         </div>
         <div className="projects-grid">
           {projects.map((project) => (
-            <Link href={`projects/${project.id}`} key={project.id}>
-              <div className="card card-work">
+            <Link href={`${project.url}`} target="_blank" key={project.id}>
+              <div className="card-work">
                 <div className="image">
                   <Image
                     alt={project.title}

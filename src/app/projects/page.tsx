@@ -36,7 +36,7 @@ const BrowseMyWorkPage = async () => {
       <div className="project-grid">
         {projects.map((project) => (
           <div className="card-project" key={project.id}>
-            <Link href={`/projects/${project.id}`}>
+            <Link href={`${project.url}`} target="_blank">
               <div className="card-content">
                 <Image
                   className="img z-0"
@@ -46,9 +46,6 @@ const BrowseMyWorkPage = async () => {
                 />
                 <div className="card-text z-10">
                   <h2>{project.title}</h2>
-                  <h3>-----------------------</h3>
-                  {/* <Link href={`https://${project.url}`}>{project.url}</Link> */}
-                  <p>{project.description}</p>
                 </div>
               </div>
             </Link>

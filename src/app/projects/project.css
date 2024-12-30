@@ -101,13 +101,6 @@ h1 {
     transform 0.5s ease; /* Smooth transition for opacity, height, bottom, and transform */
 }
 
-.card-project:hover .card-text {
-  height: 100%; /* Expand text container to 100% height */
-  bottom: 0; /* Move text into view */
-  opacity: 1; /* Make the text visible */
-  transform: translateX(-50%) translateY(0); /* Ensure text is centered */
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Add shadow on hover */
-}
 
 /* Style for the content inside each card */
 .card-content h2 {
