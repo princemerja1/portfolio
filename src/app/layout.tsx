@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import SmartLink from "./components/SmartLink/smartlink";
 
 export const metadata: Metadata = {
   title: "Prince Merja",
-  description: "Prince Mejra's Portfolio",
+  description: "Explore the personal portfolio of Prince Merja, a game developer, photo editor, video editor, VFX/CGI artist, and programmer.",
 };
 
 export default function RootLayout({
@@ -13,6 +14,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const url = "https://princemerja.me"; 
   return (
     <>
       <Analytics />
@@ -22,7 +24,7 @@ export default function RootLayout({
         <meta name="author" content="Prince Merja" />
         <meta
           name="description"
-          content="Explore the personal portfolio of Prince Merja, a game developer, photo editor, video editor, VFX/CGI artist, and programmer. Showcasing innovative projects like Earch B638 and P2 Vortex."
+          content="Explore the personal portfolio of Prince Merja, a game developer, photo editor, video editor, VFX/CGI artist, and programmer."
         />
         <meta
           name="keywords"
@@ -30,6 +32,7 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <body className={`antialiased z-9`}>
+          <SmartLink url={url}/>
           <section className="-z-50">
             <span className="star"></span>
             <span className="star"></span>
