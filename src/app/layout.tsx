@@ -18,10 +18,7 @@ export default function RootLayout({
       <Analytics />
       <SpeedInsights />
       <html lang="en">
-        <meta
-          name="google-site-verification"
-          content="nw3QmgKz104UjN3gtyJ-wArZ3OflW3SsQP5KcrbnXi4"
-        />
+      <meta name="google-site-verification" content="scmr0_JFThrBJJtyDjm_9FdKdMG2btR-qMquaMPxHAk" />
         <meta name="author" content="Prince Merja" />
         <meta
           name="description"
