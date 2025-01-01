@@ -30,20 +30,6 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         
         <body className={"antialiased z-9"}>
-          <section className="-z-50">
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-            <span className="star"></span>
-          </section>
           <div className="main-container">{children}</div>
         </body>
       </html>
