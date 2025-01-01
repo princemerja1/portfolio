@@ -19,6 +19,7 @@ export default function RootLayout({
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com"></link>
       <html lang="en">
+
       <meta property="og:title" content="Prince Merja | P2Vortex" />
         <meta
           name="google-site-verification"
