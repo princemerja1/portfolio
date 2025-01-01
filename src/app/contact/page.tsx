@@ -28,17 +28,19 @@ export default function Contact() {
     const form = e.currentTarget; // Get the current form element
 
     // Explicitly cast form elements to their respective HTML types
-    const Firstname = (form.elements.namedItem("fname") as HTMLInputElement).value;
-    const Lastname = (form.elements.namedItem("sname") as HTMLInputElement).value;
-    const Companyname = (form.elements.namedItem("cname") as HTMLInputElement).value;
+    const Firstname = (form.elements.namedItem("fname") as HTMLInputElement)
+      .value;
+    const Lastname = (form.elements.namedItem("sname") as HTMLInputElement)
+      .value;
+    const Companyname = (form.elements.namedItem("cname") as HTMLInputElement)
+      .value;
     const number = (form.elements.namedItem("number") as HTMLInputElement)
       .value;
     const email = (form.elements.namedItem("email") as HTMLInputElement).value;
     const message = (form.elements.namedItem("message") as HTMLTextAreaElement)
       .value;
 
-    try{
-
+    try {
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
@@ -55,7 +57,7 @@ export default function Contact() {
           message,
         }),
       });
-      
+
       const result = await response.json();
       if (!result.success) {
         throw new Error("Submission failed");
@@ -65,87 +67,89 @@ export default function Contact() {
       console.error("Error during form submission:", error);
       // Optionally show an error message to the user
     }
-  
   }
 
   return (
     <>
-      <div className="contact">Contact</div>
-      <div className="card contact-main-container">
-        <form onSubmit={handleSubmit}>
-          <div className="contact-container">
-            <label htmlFor="fname">First Name :</label>
-            <input
-              className="border"
-              type="text"
-              name="fname"
-              required
-              placeholder="First name"
-            />
-          </div>
-          <div className="contact-container">
-            <label htmlFor="sname">Last Name :</label>
-            <input
-              className="border"
-              type="text"
-              name="sname"
-              required
-              placeholder="Last Name"
-            />
-          </div>
-          <div className="contact-container">
-            <label htmlFor="cname">Company Name :</label>
-            <input
-              className="border"
-              type="text"
-              name="cname"
-              required
-              placeholder="Company Name"
-            />
-          </div>
-          <div className="contact-container">
-            <label htmlFor="num">Contact Number :</label>
-            <input
-              className="border"
-              type="tel"
-              name="number"
-              required
-              placeholder="xxxxxxx485"
-              maxLength={10}
-              minLength={10}
-            />
-          </div>
-          <div className="contact-container">
-            <label htmlFor="email">Email :</label>
-            <input
-              className="border"
-              type="email"
-              name="email"
-              required
-              placeholder="email@example.com"
-            />
-          </div>
-          <div className="contact-container">
-            <label htmlFor="message">Message :</label>
-            <textarea
-              className="border"
-              name="message"
-              rows={3}
-              placeholder="Enter Message"
-            ></textarea>
-          </div>
-          <button className="button border" type="submit">
-            Submit
-          </button>
-          <button
-            className="button border back"
-            onClick={handleBack}
-            disabled={!isMounted}
-          >
-            Go Back
-          </button>
-        </form>
-      </div>
+      <head>
+        <link rel="canonical" href="https://princemerja.me/contact" />
+      </head>
+        <div className="contact">Contact</div>
+        <div className="card contact-main-container">
+          <form onSubmit={handleSubmit}>
+            <div className="contact-container">
+              <label htmlFor="fname">First Name :</label>
+              <input
+                className="border"
+                type="text"
+                name="fname"
+                required
+                placeholder="First name"
+              />
+            </div>
+            <div className="contact-container">
+              <label htmlFor="sname">Last Name :</label>
+              <input
+                className="border"
+                type="text"
+                name="sname"
+                required
+                placeholder="Last Name"
+              />
+            </div>
+            <div className="contact-container">
+              <label htmlFor="cname">Company Name :</label>
+              <input
+                className="border"
+                type="text"
+                name="cname"
+                required
+                placeholder="Company Name"
+              />
+            </div>
+            <div className="contact-container">
+              <label htmlFor="num">Contact Number :</label>
+              <input
+                className="border"
+                type="tel"
+                name="number"
+                required
+                placeholder="xxxxxxx485"
+                maxLength={10}
+                minLength={10}
+              />
+            </div>
+            <div className="contact-container">
+              <label htmlFor="email">Email :</label>
+              <input
+                className="border"
+                type="email"
+                name="email"
+                required
+                placeholder="email@example.com"
+              />
+            </div>
+            <div className="contact-container">
+              <label htmlFor="message">Message :</label>
+              <textarea
+                className="border"
+                name="message"
+                rows={3}
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <button className="button border" type="submit">
+              Submit
+            </button>
+            <button
+              className="button border back"
+              onClick={handleBack}
+              disabled={!isMounted}
+            >
+              Go Back
+            </button>
+          </form>
+        </div>
     </>
   );
 }
