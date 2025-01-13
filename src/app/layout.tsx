@@ -34,9 +34,6 @@ export const metadata: Metadata = {
     type: "website",
   },
   viewport: "width=device-width, initial-scale=1.0",
-  alternates: {
-    canonical: "https://princemerja.me",
-  },
 };
 
 export default function RootLayout({
@@ -49,6 +46,7 @@ export default function RootLayout({
       <head>
         {/* External font preconnect */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="canonical" href="https//www.princemerja.me/"/>
       </head>
       <body className="antialiased z-9">
         {/* Analytics and Speed Insights */}
