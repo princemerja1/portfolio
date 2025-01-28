@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc>https://princemerja.me</loc>
+  <loc>https://www.princemerja.me</loc>
 </url> 
 <url>
-  <loc>https://princemerja.me/contact</loc>
+  <loc>https://www.princemerja.me/contact</loc>
 </url>
 <url>
-  <loc>https://princemerja.me/projects</loc>
+  <loc>https://www.princemerja.me/projects</loc>
 </url>
 <url>
-  <loc>https://princemerja.me/thankyou</loc>
+  <loc>https://www.princemerja.me/thankyou</loc>
 </url>
 </urlset>
