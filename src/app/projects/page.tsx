@@ -26,6 +26,11 @@ const BrowseMyWorkPage = async () => {
   const projects = await getProjects();
 
   return (
+<html>
+<head>
+        <link rel="canonical" href="https://www.princemerja.me/projects"/>
+</head>
+<body>
     <div className="w-screen">
       <div className="center-container">
         <Link href="/">
@@ -53,6 +58,8 @@ const BrowseMyWorkPage = async () => {
         ))}
       </div>
     </div>
+</body>
+</html>
   );
 };
 
