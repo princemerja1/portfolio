@@ -1,4 +1,4 @@
-// /app/projects/page.tsx
+import type { Metadata } from "next";
 import fs from "fs";
 import path from "path";
 import Image from "next/image";
@@ -15,6 +15,14 @@ interface WorkItem {
   url: string;
 }
 
+export const metadata: Metadata = {
+  title: "Browse My Work | Prince Merja",
+  description: "Explore projects and portfolio work by Prince Merja.",
+  alternates: {
+    canonical: "https://www.princemerja.me/projects",
+  },
+};
+
 async function getProjects(): Promise<WorkItem[]> {
   const filePath = path.join(process.cwd(), "public", "projects.json");
   const fileContent = fs.readFileSync(filePath, "utf8");
@@ -26,11 +34,6 @@ const BrowseMyWorkPage = async () => {
   const projects = await getProjects();
 
   return (
-<html>
-<head>
-        <link rel="canonical" href="https://www.princemerja.me/projects"/>
-</head>
-<body>
     <div className="w-screen">
       <div className="center-container">
         <Link href="/">
@@ -41,7 +44,7 @@ const BrowseMyWorkPage = async () => {
       <div className="project-grid">
         {projects.map((project) => (
           <div className="card-project" key={project.id}>
-            <Link href={`${project.url}`} target="_blank">
+            <Link href={project.url} target="_blank" rel="noopener noreferrer">
               <div className="card-content">
                 <Image
                   className="img z-0"
@@ -58,8 +61,6 @@ const BrowseMyWorkPage = async () => {
         ))}
       </div>
     </div>
-</body>
-</html>
   );
 };
 
