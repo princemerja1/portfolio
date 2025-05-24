@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     type: "website",
   },
   viewport: "width=device-width, initial-scale=1.0",
+  alternates: {
+    canonical: "https://www.princemerja.me",
+  },
 };
 
 export default function RootLayout({
