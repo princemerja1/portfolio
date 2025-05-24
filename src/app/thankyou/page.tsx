@@ -1,15 +1,25 @@
 // app/thankyou/page.tsx
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Thank You | Prince Merja",
+  description: "Submission successful — Prince Merja will get back to you shortly.",
+  alternates: {
+    canonical: "https://www.princemerja.me/thankyou",
+  },
+};
+
 "use client";
 import "./thankyou.css";
 import "../components/button.css";
 import React from "react";
-import { useRouter } from "next/navigation"; // Importing the correct useRouter for app directory
+import { useRouter } from "next/navigation";
 
 export default function ThankYou() {
-  const router = useRouter(); // Initialize router for navigation
+  const router = useRouter();
 
   const handleHome = () => {
-    router.push("/"); // Redirect to homepage after clicking the button
+    router.push("/");
   };
 
   return (
