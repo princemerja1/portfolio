@@ -1,3 +1,5 @@
+
+"use client";
 // app/thankyou/page.tsx
 import type { Metadata } from "next";
 
@@ -8,8 +10,6 @@ export const metadata: Metadata = {
     canonical: "https://www.princemerja.me/thankyou",
   },
 };
-
-"use client";
 import "./thankyou.css";
 import "../components/button.css";
 import React from "react";
